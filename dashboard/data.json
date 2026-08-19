@@ -1,0 +1,173 @@
+{
+  "agents": [
+    {
+      "name": "Scout",
+      "role": "Lead Discovery & Data Scraping",
+      "status": "idle",
+      "task": null
+    },
+    {
+      "name": "Sales",
+      "role": "Client Communication & Proposals",
+      "status": "idle",
+      "task": null
+    },
+    {
+      "name": "Developer",
+      "role": "Website & App Building",
+      "status": "idle",
+      "task": null
+    },
+    {
+      "name": "QA",
+      "role": "Testing, Security & Quality Control",
+      "status": "idle",
+      "task": null
+    },
+    {
+      "name": "Orchestrator",
+      "role": "Pipeline Management & Coordination",
+      "status": "idle",
+      "task": null
+    }
+  ],
+  "leads": [
+    {
+      "company": "Malabe Kids Academy",
+      "contact": "Kamani De Silva",
+      "score": 90,
+      "status": "contacted",
+      "industry": "scout"
+    },
+    {
+      "company": "Malabe Dental Clinic",
+      "contact": "Dilani Jayawardena",
+      "score": 88,
+      "status": "contacted",
+      "industry": "scout"
+    },
+    {
+      "company": "Kaduwela Auto Spares",
+      "contact": "Kasun Perera",
+      "score": 85,
+      "status": "contacted",
+      "industry": "scout"
+    },
+    {
+      "company": "Sunrise Bakery Kaduwela",
+      "contact": "Amara Fernando",
+      "score": 82,
+      "status": "contacted",
+      "industry": "scout"
+    },
+    {
+      "company": "Green Valley Organic Store",
+      "contact": "Nishantha Silva",
+      "score": 78,
+      "status": "contacted",
+      "industry": "scout"
+    },
+    {
+      "company": "Kaduwela Hardware Centre",
+      "contact": "Ravi Wickramasinghe",
+      "score": 75,
+      "status": "new",
+      "industry": "scout"
+    },
+    {
+      "company": "Thunhandahena Motors",
+      "contact": "Sunil Ratnayake",
+      "score": 72,
+      "status": "new",
+      "industry": "scout"
+    },
+    {
+      "company": "Korathota Rice Mill",
+      "contact": "Tharaka Bandara",
+      "score": 68,
+      "status": "new",
+      "industry": "scout"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Kaduwela Auto Spares Website",
+      "client": "Kaduwela Auto Spares",
+      "stage": "building",
+      "progress": 85,
+      "agent": "Developer"
+    },
+    {
+      "name": "Malabe Dental Clinic Site",
+      "client": "Malabe Dental Clinic",
+      "stage": "complete",
+      "progress": 100,
+      "agent": "QA"
+    },
+    {
+      "name": "Malabe Kids Academy Portal",
+      "client": "Malabe Kids Academy",
+      "stage": "proposal",
+      "progress": 20,
+      "agent": "Sales"
+    }
+  ],
+  "metrics": {
+    "sites_built": 48,
+    "clients": 17,
+    "revenue": "$278K",
+    "hours_saved": 2460,
+    "leads_today": 8,
+    "proposals_sent": 5
+  },
+  "activity": [
+    {
+      "time": "2 min ago",
+      "agent": "Sales",
+      "action": "Sent proposal to Malabe Kids Academy",
+      "icon": "📧"
+    },
+    {
+      "time": "5 min ago",
+      "agent": "Sales",
+      "action": "Sent proposal to Malabe Dental Clinic",
+      "icon": "📧"
+    },
+    {
+      "time": "8 min ago",
+      "agent": "Sales",
+      "action": "Sent proposal to Kaduwela Auto Spares",
+      "icon": "📧"
+    },
+    {
+      "time": "10 min ago",
+      "agent": "Developer",
+      "action": "Kaduwela Auto Spares site: 75% → 85%",
+      "icon": "🔨"
+    },
+    {
+      "time": "12 min ago",
+      "agent": "QA",
+      "action": "Malabe Dental Clinic — QC PASSED",
+      "icon": "✅"
+    },
+    {
+      "time": "15 min ago",
+      "agent": "Scout",
+      "action": "Found 8 leads in Kaduwela/Malabe area",
+      "icon": "🎯"
+    },
+    {
+      "time": "20 min ago",
+      "agent": "Orchestrator",
+      "action": "Created 3 projects from converted leads",
+      "icon": "📋"
+    },
+    {
+      "time": "1 hr ago",
+      "agent": "Brain",
+      "action": "System started — all agents online",
+      "icon": "🧠"
+    }
+  ]
+}
