@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGetter Digital — We Build Websites & AI Bots</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #fff; }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .service-card {
+            background: #1a1a2e;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: left;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            border-color: #00d4ff;
+            transform: translateY(-5px);
+        }
+        
+        .service-icon { font-size: 32px; margin-bottom: 15px; }
+        .service-title { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+        .service-desc { color: #888; line-height: 1.6; }
+        .service-price { color: #00d4ff; font-weight: 700; margin-top: 15px; font-size: 18px; }
+        
+        .cta-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: #1a1a2e;
+        }
+        
+        .cta-title { font-size: 32px; font-weight: 800; margin-bottom: 20px; }
+        .cta-subtitle { color: #888; margin-bottom: 30px; font-size: 18px; }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            color: #fff;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #00d4ff;
+        }
+        
+        .btn:hover { transform: scale(1.05); }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #0a0a0a;
+            border-radius: 12px;
+            border: 1px solid #333;
+        }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; color: #888; font-size: 14px; }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            background: #1a1a2e;
+            color: #fff;
+            font-size: 16px;
+        }
+        .form-group textarea { height: 100px; resize: vertical; }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+        .submit-btn:hover { transform: scale(1.02); }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat { text-align: center; }
+        .stat-number { font-size: 36px; font-weight: 800; color: #00d4ff; }
+        .stat-label { color: #888; font-size: 14px; }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+        
+        @media (max-width: 600px) {
+            .logo { font-size: 32px; }
+            .tagline { font-size: 16px; }
+            .cta-title { font-size: 24px; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="logo">GoGetter Digital</div>
+    <p class="tagline">Websites, Chatbots & AI Automation for Small Business</p>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">AI Chatbots Working</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">40%</div>
+            <div class="stat-label">More Customers</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">$299</div>
+            <div class="stat-label">Starting Price</div>
+        </div>
+    </div>
+</div>
+
+<div class="services">
+    <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <div class="service-title">Website Design</div>
+        <div class="service-desc">Professional, mobile-friendly websites that look great and load fast. Get found on Google.</div>
+        <div class="service-price">From $299</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">🤖</div>
+        <div class="service-title">AI Chatbots</div>
+        <div class="service-desc">24/7 customer service bots that answer questions, take orders, and book appointments while you sleep.</div>
+        <div class="service-price">From $499</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <div class="service-title">E-Commerce Stores</div>
+        <div class="service-desc">Online stores where customers browse products, place orders, and pay online. Delivery tracking included.</div>
+        <div class="service-price">From $599</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">📅</div>
+        <div class="service-title">Booking Systems</div>
+        <div class="service-desc">Automated appointment scheduling. Customers book online, you get reminders. No more missed calls.</div>
+        <div class="service-price">From $499</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">📧</div>
+        <div class="service-title">Email Automation</div>
+        <div class="service-desc">Welcome emails, order confirmations, follow-ups — all automatic. Save hours every week.</div>
+        <div class="service-price">From $299</div>
+    </div>
+    
+    <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-title">Data Entry & Processing</div>
+        <div class="service-desc">We handle your data entry, spreadsheet work, and document processing. Fast, accurate, affordable.</div>
+        <div class="service-price">From $10/hr</div>
+    </div>
+</div>
+
+<div class="cta-section">
+    <h2 class="cta-title">Ready to Grow Your Business?</h2>
+    <p class="cta-subtitle">Get a free consultation. No commitment. No credit card.</p>
+    
+    <div class="contact-form">
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+            <label>WhatsApp Number</label>
+            <input type="tel" id="phone" placeholder="+1 234 567 8900">
+        </div>
+        <div class="form-group">
+            <label>What Do You Need?</label>
+            <select id="service">
+                <option value="">Select a service...</option>
+                <option value="website">Website Design</option>
+                <option value="chatbot">AI Chatbot</option>
+                <option value="ecommerce">E-Commerce Store</option>
+                <option value="booking">Booking System</option>
+                <option value="email">Email Automation</option>
+                <option value="data">Data Entry</option>
+                <option value="other">Something Else</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Tell Us About Your Business</label>
+            <textarea id="message" placeholder="I run a plumbing business and need a website..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="sendMessage()">Send via WhatsApp →</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 GoGetter Digital. All rights reserved.</p>
+    <p>Built with ❤️ for small businesses everywhere</p>
+</div>
+
+<a href="https://wa.me/94772256655?text=Hi%20GoGetter%20Digital!%20I%20need%20help%20with%20my%20business." class="whatsapp-float">💬</a>
+
+<script>
+function sendMessage() {
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    
+    const text = `Hi GoGetter Digital! I'm ${name || 'interested'}. I need help with: ${service || 'my business'}. ${message || ''} My WhatsApp: ${phone || 'N/A'}`;
+    
+    const url = `https://wa.me/94772256655?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
